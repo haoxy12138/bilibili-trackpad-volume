@@ -1,0 +1,36 @@
+name: 问题反馈 / Bug report
+description: 报告方向、兼容性或播放器行为问题。
+labels: [bug]
+body:
+  - type: input
+    id: versions
+    attributes:
+      label: 运行环境
+      description: 操作系统、浏览器、Tampermonkey 和脚本版本。
+      placeholder: macOS / Chrome / Tampermonkey / script version
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: 播放模式
+      options:
+        - 网页全屏
+        - 全屏
+        - 普通播放模式
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 复现步骤、预期与实际结果
+      description: 请说明指针位于画面还是控制条，以及是否启用了其他音量脚本。不要提交 Cookie、令牌或账号私人信息。
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 已检查
+      options:
+        - label: 安装或更新后已刷新视频页面。
+        - label: 已检查是否有其他音量反转脚本或组件冲突。

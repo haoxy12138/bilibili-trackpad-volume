@@ -1,0 +1,17 @@
+{
+  "name": "bilibili-trackpad-volume",
+  "version": "1.0.3",
+  "description": "Natural trackpad volume direction for Bilibili fullscreen video.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "author": "haoxy12138",
+  "repository": "github:haoxy12138/bilibili-trackpad-volume",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "check": "node --check bilibili-trackpad-volume.user.js",
+    "test": "node --test",
+    "build": "python3 tools/build.py",
+    "check:release": "python3 tools/build.py --check"
+  }
+}
